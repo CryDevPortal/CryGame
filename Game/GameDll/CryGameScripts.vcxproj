@@ -1,0 +1,524 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="-|Win32">
+      <Configuration>-</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{C412D317-05D7-49CE-B901-D17AD2E65550}</ProjectGuid>
+    <RootNamespace>CryGameScripts</RootNamespace>
+<Keyword>Win32Proj</Keyword>
+    <SccAuxPath />
+    <VCTargetsPath Condition="'$(VCTargetsPath11)' != '' and '$(VSVersion)' == '' and $(VisualStudioVersion) == ''">$(VCTargetsPath11)</VCTargetsPath>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='-|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v110</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='-|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.40219.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='-|Win32'">$(SolutionDir)$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='-|Win32'">$(Configuration)\</IntDir>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='-|Win32'">true</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='-|Win32'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>
+      </AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>
+      </PreprocessorDefinitions>
+      <MinimalRebuild>true</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>
+      </AdditionalDependencies>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <RandomizedBaseAddress>false</RandomizedBaseAddress>
+      <DataExecutionPrevention>
+      </DataExecutionPrevention>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <None Include="..\..\..\Game\Scripts\AI\Behaviors\Personalities\Civilian\CivilianAlerted.lua" />
+    <None Include="..\..\..\Game\Scripts\AI\Behaviors\Personalities\Racer\RacerIdle.lua" />
+    <None Include="..\..\..\Game\Scripts\AI\Behaviors\Personalities\Racer\RacerRacing.lua" />
+    <None Include="..\..\..\Game\Scripts\AI\Behaviors\Personalities\RacingCar\RacingCarIdle.lua" />
+    <None Include="..\..\..\Game\Scripts\AI\Behaviors\Personalities\RacingCar\RacingCarRacing.lua" />
+    <None Include="..\..\..\Game\Scripts\AI\Navigation.xml" />
+    <None Include="..\..\..\Game\Scripts\AI\SelectionTrees\Racer.xml" />
+    <None Include="..\..\..\Game\Scripts\AI\SelectionTrees\RacingCar.xml" />
+    <None Include="..\..\..\Game\Scripts\AI\TPS\CivilianQueries.lua" />
+    <None Include="..\..\..\Game\Scripts\common.lua" />
+    <None Include="..\..\..\Game\Scripts\Entities\AI\NavigationSeedPoint.lua" />
+    <None Include="..\..\..\Game\Scripts\GameRules\Racing.lua" />
+    <None Include="..\..\..\Game\Scripts\main.lua" />
+    <None Include="..\..\..\Game\Scripts\Map.lua" />
+    <None Include="..\..\..\Game\Scripts\Network\cvars.txt" />
+    <None Include="..\..\..\Game\Scripts\physics.lua" />
+    <None Include="..\..\..\Game\Scripts\AI\AIBehavior.lua" />
+    <None Include="..\..\..\Game\Scripts\AI\aiconfig.lua" />
+    <None Include="..\..\..\Game\Scripts\AI\AIGroupBehavior.lua" />
+    <None Include="..\..\..\Game\Scripts\AI\Anchor.lua" />
+    <None Include="..\..\..\Game\Scripts\AI\Cover.xml" />
+    <None Include="..\..\..\Game\Scripts\AI\Factions.xml" />
+    <None Include="..\..\..\Game\Scripts\AI\Group.lua" />
+    <None Include="..\..\..\Game\Scripts\AI\lookup.xml" />
+    <None Include="..\..\..\Game\Scripts\AI\pathfindProperties.lua" />
+    <None Include="..\..\..\Game\Scripts\AI\pathfindProperties.xml" />
+    <None Include="..\..\..\Game\Scripts\AI\TacticalPositionManager.lua" />
+    <None Include="..\..\..\Game\Scripts\AI\SelectionTrees\BasicAI.xml" />
+    <None Include="..\..\..\Game\Scripts\AI\SelectionTrees\Civilian.xml" />
+    <None Include="..\..\..\Game\Scripts\AI\SelectionTrees\Cover2ST.xml" />
+    <None Include="..\..\..\Game\Scripts\AI\SelectionTrees\Dummy.xml" />
+    <None Include="..\..\..\Game\Scripts\AI\SelectionTrees\Flyer.xml" />
+    <None Include="..\..\..\Game\Scripts\AI\SelectionTrees\FogOfWar.xml" />
+    <None Include="..\..\..\Game\Scripts\AI\Coordination\Coordination.lua" />
+    <None Include="..\..\..\Game\Scripts\AI\Behaviors\DEFAULT.lua" />
+    <None Include="..\..\..\Game\Scripts\AI\Behaviors\Template.lua" />
+    <None Include="..\..\..\Game\Scripts\AI\Behaviors\Personalities\BasicAI_ST\BasicAIAttack_ST.lua" />
+    <None Include="..\..\..\Game\Scripts\AI\Behaviors\Personalities\BasicAI_ST\BasicAIIdle_ST.lua" />
+    <None Include="..\..\..\Game\Scripts\AI\Behaviors\Personalities\Cover2\Cover2Attack.lua" />
+    <None Include="..\..\..\Game\Scripts\AI\Behaviors\Personalities\Cover2\Cover2AttackGroup.lua" />
+    <None Include="..\..\..\Game\Scripts\AI\Behaviors\Personalities\Cover2\Cover2AvoidExplosives.lua" />
+    <None Include="..\..\..\Game\Scripts\AI\Behaviors\Personalities\Cover2\Cover2AvoidTank.lua" />
+    <None Include="..\..\..\Game\Scripts\AI\Behaviors\Personalities\Cover2\Cover2AvoidVehicle.lua" />
+    <None Include="..\..\..\Game\Scripts\AI\Behaviors\Personalities\Cover2\Cover2CallReinforcements.lua" />
+    <None Include="..\..\..\Game\Scripts\AI\Behaviors\Personalities\Cover2\Cover2Hide.lua" />
+    <None Include="..\..\..\Game\Scripts\AI\Behaviors\Personalities\Cover2\Cover2Idle.lua" />
+    <None Include="..\..\..\Game\Scripts\AI\Behaviors\Personalities\Cover2\Cover2Interested.lua" />
+    <None Include="..\..\..\Game\Scripts\AI\Behaviors\Personalities\Cover2\Cover2Panic.lua" />
+    <None Include="..\..\..\Game\Scripts\AI\Behaviors\Personalities\Cover2\Cover2Reload.lua" />
+    <None Include="..\..\..\Game\Scripts\AI\Behaviors\Personalities\Cover2\Cover2RPGAttack.lua" />
+    <None Include="..\..\..\Game\Scripts\AI\Behaviors\Personalities\Cover2\Cover2Search.lua" />
+    <None Include="..\..\..\Game\Scripts\AI\Behaviors\Personalities\Cover2\Cover2Seek.lua" />
+    <None Include="..\..\..\Game\Scripts\AI\Behaviors\Personalities\Cover2\Cover2Threatened.lua" />
+    <None Include="..\..\..\Game\Scripts\AI\Behaviors\Personalities\Cover2\Cover2ThreatenedStandby.lua" />
+    <None Include="..\..\..\Game\Scripts\AI\Behaviors\Personalities\Cover2ST\Cover2AttackGroupST.lua" />
+    <None Include="..\..\..\Game\Scripts\AI\Behaviors\Personalities\Cover2ST\Cover2AttackST.lua" />
+    <None Include="..\..\..\Game\Scripts\AI\Behaviors\Personalities\Cover2ST\Cover2AvoidExplosivesST.lua" />
+    <None Include="..\..\..\Game\Scripts\AI\Behaviors\Personalities\Cover2ST\Cover2AvoidTankST.lua" />
+    <None Include="..\..\..\Game\Scripts\AI\Behaviors\Personalities\Cover2ST\Cover2AvoidVehicleST.lua" />
+    <None Include="..\..\..\Game\Scripts\AI\Behaviors\Personalities\Cover2ST\Cover2CallReinforcementsST.lua" />
+    <None Include="..\..\..\Game\Scripts\AI\Behaviors\Personalities\Cover2ST\Cover2HideST.lua" />
+    <None Include="..\..\..\Game\Scripts\AI\Behaviors\Personalities\Cover2ST\Cover2IdleST.lua" />
+    <None Include="..\..\..\Game\Scripts\AI\Behaviors\Personalities\Cover2ST\Cover2InterestedST.lua" />
+    <None Include="..\..\..\Game\Scripts\AI\Behaviors\Personalities\Cover2ST\Cover2PanicST.lua" />
+    <None Include="..\..\..\Game\Scripts\AI\Behaviors\Personalities\Cover2ST\Cover2ReloadST.lua" />
+    <None Include="..\..\..\Game\Scripts\AI\Behaviors\Personalities\Cover2ST\Cover2RPGAttackST.lua" />
+    <None Include="..\..\..\Game\Scripts\AI\Behaviors\Personalities\Cover2ST\Cover2SearchST.lua" />
+    <None Include="..\..\..\Game\Scripts\AI\Behaviors\Personalities\Cover2ST\Cover2SeekST.lua" />
+    <None Include="..\..\..\Game\Scripts\AI\Behaviors\Personalities\Cover2ST\Cover2ThreatenedST.lua" />
+    <None Include="..\..\..\Game\Scripts\AI\Behaviors\Personalities\Cover2ST\Cover2ThreatenedStandbyST.lua" />
+    <None Include="..\..\..\Game\Scripts\AI\Behaviors\Personalities\Cover3\Cover3Attack.lua" />
+    <None Include="..\..\..\Game\Scripts\AI\Behaviors\Personalities\Cover3\Cover3AvoidExplosives.lua" />
+    <None Include="..\..\..\Game\Scripts\AI\Behaviors\Personalities\Cover3\Cover3Fallen.lua" />
+    <None Include="..\..\..\Game\Scripts\AI\Behaviors\Personalities\Cover3\Cover3Idle.lua" />
+    <None Include="..\..\..\Game\Scripts\AI\Behaviors\Personalities\Cover3\Cover3Interested.lua" />
+    <None Include="..\..\..\Game\Scripts\AI\Behaviors\Personalities\Cover3\Cover3Seek.lua" />
+    <None Include="..\..\..\Game\Scripts\AI\Behaviors\Personalities\FogOfWar\FogOfWarAttack.lua" />
+    <None Include="..\..\..\Game\Scripts\AI\Behaviors\Personalities\FogOfWar\FogOfWarEscape.lua" />
+    <None Include="..\..\..\Game\Scripts\AI\Behaviors\Personalities\FogOfWar\FogOfWarIdle.lua" />
+    <None Include="..\..\..\Game\Scripts\AI\Behaviors\Personalities\FogOfWar\FogOfWarSeek.lua" />
+    <None Include="..\..\..\Game\Scripts\AI\Behaviors\Personalities\FogOfWarST\FogOfWarAttackST.lua" />
+    <None Include="..\..\..\Game\Scripts\AI\Behaviors\Personalities\FogOfWarST\FogOfWarEscapeST.lua" />
+    <None Include="..\..\..\Game\Scripts\AI\Behaviors\Personalities\FogOfWarST\FogOfWarIdleST.lua" />
+    <None Include="..\..\..\Game\Scripts\AI\Behaviors\Personalities\FogOfWarST\FogOfWarSeekST.lua" />
+    <None Include="..\..\..\Game\Scripts\AI\Behaviors\Personalities\HumanBase\HBaseFakeAlerted.lua" />
+    <None Include="..\..\..\Game\Scripts\AI\Behaviors\Personalities\HumanBase\HBaseIdle.lua" />
+    <None Include="..\..\..\Game\Scripts\AI\Behaviors\Personalities\HumanBase\HBaseStaticShooter.lua" />
+    <None Include="..\..\..\Game\Scripts\AI\Behaviors\Personalities\HumanBase\HBaseTranquilized.lua" />
+    <None Include="..\..\..\Game\Scripts\AI\Behaviors\Personalities\Player\PlayerAttack.lua" />
+    <None Include="..\..\..\Game\Scripts\AI\Behaviors\Personalities\Player\PlayerIdle.lua" />
+    <None Include="..\..\..\Game\Scripts\AI\Behaviors\Personalities\Flyer\FlyerIdle.lua" />
+    <None Include="..\..\..\Game\Scripts\AI\Behaviors\Personalities\SHARED\Combat\CheckDead.lua" />
+    <None Include="..\..\..\Game\Scripts\AI\Behaviors\Personalities\SHARED\Combat\FastKill.lua" />
+    <None Include="..\..\..\Game\Scripts\AI\Behaviors\Personalities\SHARED\Combat\UseMounted.lua" />
+    <None Include="..\..\..\Game\Scripts\AI\Behaviors\Personalities\SHARED\Combat\UseMountedIdle.lua" />
+    <None Include="..\..\..\Game\Scripts\AI\Behaviors\Personalities\SHARED\Combat\UseMountedTranquilized.lua" />
+    <None Include="..\..\..\Game\Scripts\AI\Behaviors\Personalities\SHARED\InVehicle\EnteringVehicle.lua" />
+    <None Include="..\..\..\Game\Scripts\AI\Behaviors\Personalities\SHARED\InVehicle\InVehicle.lua" />
+    <None Include="..\..\..\Game\Scripts\AI\Behaviors\Personalities\SHARED\InVehicle\InVehicleAlerted.lua" />
+    <None Include="..\..\..\Game\Scripts\AI\Behaviors\Personalities\SHARED\InVehicle\InVehicleChangeSeat.lua" />
+    <None Include="..\..\..\Game\Scripts\AI\Behaviors\Personalities\SHARED\InVehicle\InVehicleControlled.lua" />
+    <None Include="..\..\..\Game\Scripts\AI\Behaviors\Personalities\SHARED\InVehicle\InVehicleControlledGunner.lua" />
+    <None Include="..\..\..\Game\Scripts\AI\Behaviors\Personalities\SHARED\InVehicle\InVehicleGunner.lua" />
+    <None Include="..\..\..\Game\Scripts\AI\Behaviors\Personalities\SHARED\InVehicle\InVehicleTranquilized.lua" />
+    <None Include="..\..\..\Game\Scripts\AI\Behaviors\Personalities\SHARED\Jobs\Job_StandIdle.lua" />
+    <None Include="..\..\..\Game\Scripts\AI\Behaviors\Personalities\SHARED\Other\Dialog.lua" />
+    <None Include="..\..\..\Game\Scripts\AI\Behaviors\Personalities\SHARED\Other\Dumb.lua" />
+    <None Include="..\..\..\Game\Scripts\AI\Behaviors\Personalities\Test\TestCombat.lua" />
+    <None Include="..\..\..\Game\Scripts\AI\Behaviors\Personalities\Test\TestIdle.lua" />
+    <None Include="..\..\..\Game\Scripts\AI\Behaviors\Personalities\Civilian\CivilianIdle.lua" />
+    <None Include="..\..\..\Game\Scripts\AI\Behaviors\VEHICLES\VehicleAct.lua" />
+    <None Include="..\..\..\Game\Scripts\AI\Behaviors\VEHICLES\VehicleGoto.lua" />
+    <None Include="..\..\..\Game\Scripts\AI\Behaviors\VEHICLES\VehicleIdle.lua" />
+    <None Include="..\..\..\Game\Scripts\AI\Behaviors\VEHICLES\HELIAGGRESSIVE\HeliAggressiveIdle.lua" />
+    <None Include="..\..\..\Game\Scripts\AI\Behaviors\VEHICLES\HELICOPTER\HeliAttack.lua" />
+    <None Include="..\..\..\Game\Scripts\AI\Behaviors\VEHICLES\HELICOPTER\HeliBase.lua" />
+    <None Include="..\..\..\Game\Scripts\AI\Behaviors\VEHICLES\HELICOPTER\HELIDEFAULT.lua" />
+    <None Include="..\..\..\Game\Scripts\AI\Behaviors\VEHICLES\HELICOPTER\HeliEmergencyLanding.lua" />
+    <None Include="..\..\..\Game\Scripts\AI\Behaviors\VEHICLES\HELICOPTER\HeliFly.lua" />
+    <None Include="..\..\..\Game\Scripts\AI\Behaviors\VEHICLES\HELICOPTER\HeliGoto.lua" />
+    <None Include="..\..\..\Game\Scripts\AI\Behaviors\VEHICLES\HELICOPTER\HeliHoverAttack2.lua" />
+    <None Include="..\..\..\Game\Scripts\AI\Behaviors\VEHICLES\HELICOPTER\HeliHoverAttack3.lua" />
+    <None Include="..\..\..\Game\Scripts\AI\Behaviors\VEHICLES\HELICOPTER\HeliIdle.lua" />
+    <None Include="..\..\..\Game\Scripts\AI\Behaviors\VEHICLES\HELICOPTER\HeliIgnorant.lua" />
+    <None Include="..\..\..\Game\Scripts\AI\Behaviors\VEHICLES\HELICOPTER\HeliLanding.lua" />
+    <None Include="..\..\..\Game\Scripts\AI\Behaviors\VEHICLES\HELICOPTER\HeliPatrol.lua" />
+    <None Include="..\..\..\Game\Scripts\AI\Behaviors\VEHICLES\HELICOPTER\HeliReinforcement.lua" />
+    <None Include="..\..\..\Game\Scripts\AI\Behaviors\VEHICLES\HELICOPTER\HeliSmoothGoto.lua" />
+    <None Include="..\..\..\Game\Scripts\AI\Behaviors\VEHICLES\HELICOPTER\HeliUnIgnorant.lua" />
+    <None Include="..\..\..\Game\Scripts\AI\Behaviors\VEHICLES\AAA\AAAIdle.lua" />
+    <None Include="..\..\..\Game\Scripts\AI\Behaviors\VEHICLES\APC\APCIdle.lua" />
+    <None Include="..\..\..\Game\Scripts\AI\Behaviors\VEHICLES\BOAT\BoatIdle.lua" />
+    <None Include="..\..\..\Game\Scripts\AI\Behaviors\VEHICLES\CAR\CarAlerted.lua" />
+    <None Include="..\..\..\Game\Scripts\AI\Behaviors\VEHICLES\CAR\CarGoto.lua" />
+    <None Include="..\..\..\Game\Scripts\AI\Behaviors\VEHICLES\CAR\CarIdle.lua" />
+    <None Include="..\..\..\Game\Scripts\AI\Behaviors\VEHICLES\CAR\CarSkid.lua" />
+    <None Include="..\..\..\Game\Scripts\AI\Behaviors\VEHICLES\PATROLBOAT\PatrolBoatIdle.lua" />
+    <None Include="..\..\..\Game\Scripts\AI\Behaviors\VEHICLES\TANK\TankAlert.lua" />
+    <None Include="..\..\..\Game\Scripts\AI\Behaviors\VEHICLES\TANK\TankAttack.lua" />
+    <None Include="..\..\..\Game\Scripts\AI\Behaviors\VEHICLES\TANK\TANKDEFAULT.lua" />
+    <None Include="..\..\..\Game\Scripts\AI\Behaviors\VEHICLES\TANK\TankEmergencyExit.lua" />
+    <None Include="..\..\..\Game\Scripts\AI\Behaviors\VEHICLES\TANK\TankGoto.lua" />
+    <None Include="..\..\..\Game\Scripts\AI\Behaviors\VEHICLES\TANK\TankIdle.lua" />
+    <None Include="..\..\..\Game\Scripts\AI\Behaviors\VEHICLES\TANK\TankMove.lua" />
+    <None Include="..\..\..\Game\Scripts\AI\Behaviors\VEHICLES\TANKCLOSE\TankCloseAttack.lua" />
+    <None Include="..\..\..\Game\Scripts\AI\Behaviors\VEHICLES\TANKCLOSE\TankCloseGoto.lua" />
+    <None Include="..\..\..\Game\Scripts\AI\Behaviors\VEHICLES\TANKCLOSE\TankCloseGotoPath.lua" />
+    <None Include="..\..\..\Game\Scripts\AI\Behaviors\VEHICLES\TANKCLOSE\TankCloseIdle.lua" />
+    <None Include="..\..\..\Game\Scripts\AI\Behaviors\VEHICLES\TANKCLOSE\TankCloseRunAway.lua" />
+    <None Include="..\..\..\Game\Scripts\AI\Behaviors\VEHICLES\TANKCLOSE\TankCloseSwitchPath.lua" />
+    <None Include="..\..\..\Game\Scripts\AI\Behaviors\VEHICLES\TANKFIXED\TankFixedGoto.lua" />
+    <None Include="..\..\..\Game\Scripts\AI\Behaviors\VEHICLES\TANKFIXED\TankFixedIdle.lua" />
+    <None Include="..\..\..\Game\Scripts\AI\Behaviors\VEHICLES\VTOL\VtolAttack.lua" />
+    <None Include="..\..\..\Game\Scripts\AI\Behaviors\VEHICLES\VTOL\VtolEmergencyLanding.lua" />
+    <None Include="..\..\..\Game\Scripts\AI\Behaviors\VEHICLES\VTOL\VtolFly.lua" />
+    <None Include="..\..\..\Game\Scripts\AI\Behaviors\VEHICLES\VTOL\VtolGoto.lua" />
+    <None Include="..\..\..\Game\Scripts\AI\Behaviors\VEHICLES\VTOL\VtolIdle.lua" />
+    <None Include="..\..\..\Game\Scripts\AI\Behaviors\VEHICLES\VTOL\VtolIgnorant.lua" />
+    <None Include="..\..\..\Game\Scripts\AI\Behaviors\VEHICLES\VTOL\VtolLanding.lua" />
+    <None Include="..\..\..\Game\Scripts\AI\Behaviors\VEHICLES\VTOL\VtolReinforcement.lua" />
+    <None Include="..\..\..\Game\Scripts\AI\Behaviors\VEHICLES\VTOL\VtolSmoothGoto.lua" />
+    <None Include="..\..\..\Game\Scripts\AI\Behaviors\VEHICLES\VTOL\VtolUnIgnorant.lua" />
+    <None Include="..\..\..\Game\Scripts\AI\Behaviors\VEHICLES\WARRIOR\WarriorIdle.lua" />
+    <None Include="..\..\..\Game\Scripts\AI\Characters\AICharacter.lua" />
+    <None Include="..\..\..\Game\Scripts\AI\Characters\DEFAULT.lua" />
+    <None Include="..\..\..\Game\Scripts\AI\Characters\Personalities\Cover2.lua" />
+    <None Include="..\..\..\Game\Scripts\AI\Characters\Personalities\Cover3.lua" />
+    <None Include="..\..\..\Game\Scripts\AI\Characters\Personalities\FogOfWar.lua" />
+    <None Include="..\..\..\Game\Scripts\AI\Characters\Personalities\Player.lua" />
+    <None Include="..\..\..\Game\Scripts\AI\Characters\Personalities\SuperDumb.lua" />
+    <None Include="..\..\..\Game\Scripts\AI\Characters\Personalities\Test.lua" />
+    <None Include="..\..\..\Game\Scripts\AI\Characters\VEHICLES\Aaa.lua" />
+    <None Include="..\..\..\Game\Scripts\AI\Characters\VEHICLES\Apc.lua" />
+    <None Include="..\..\..\Game\Scripts\AI\Characters\VEHICLES\Boat.lua" />
+    <None Include="..\..\..\Game\Scripts\AI\Characters\VEHICLES\Car.lua" />
+    <None Include="..\..\..\Game\Scripts\AI\Characters\VEHICLES\Heli.lua" />
+    <None Include="..\..\..\Game\Scripts\AI\Characters\VEHICLES\HeliAggressive.lua" />
+    <None Include="..\..\..\Game\Scripts\AI\Characters\VEHICLES\PatrolBoat.lua" />
+    <None Include="..\..\..\Game\Scripts\AI\Characters\VEHICLES\Tank.lua" />
+    <None Include="..\..\..\Game\Scripts\AI\Characters\VEHICLES\TankClose.lua" />
+    <None Include="..\..\..\Game\Scripts\AI\Characters\VEHICLES\TankFixed.lua" />
+    <None Include="..\..\..\Game\Scripts\AI\Characters\VEHICLES\Vtol.lua" />
+    <None Include="..\..\..\Game\Scripts\AI\Characters\VEHICLES\Warrior.lua" />
+    <None Include="..\..\..\Game\Scripts\AI\Formations\FormationManager.lua" />
+    <None Include="..\..\..\Game\Scripts\AI\GoalPipes\GoalPipesBasicAI.xml" />
+    <None Include="..\..\..\Game\Scripts\AI\GoalPipes\GoalPipesCivilian.xml" />
+    <None Include="..\..\..\Game\Scripts\AI\GoalPipes\GoalPipesFogOfWar.xml" />
+    <None Include="..\..\..\Game\Scripts\AI\GoalPipes\PipeManager.lua" />
+    <None Include="..\..\..\Game\Scripts\AI\GoalPipes\PipeManagerCover2.lua" />
+    <None Include="..\..\..\Game\Scripts\AI\GoalPipes\PipeManagerExamples.lua" />
+    <None Include="..\..\..\Game\Scripts\AI\GoalPipes\PipeManagerShared.lua" />
+    <None Include="..\..\..\Game\Scripts\AI\GoalPipes\PipeManagerVehicle.lua" />
+    <None Include="..\..\..\Game\Scripts\AI\GoalPipes\PMReusable.lua" />
+    <None Include="..\..\..\Game\Scripts\AI\GoalPipes\PMSingle.lua" />
+    <None Include="..\..\..\Game\Scripts\AI\Logic\AI_Utils.lua" />
+    <None Include="..\..\..\Game\Scripts\AI\Logic\BlackBoard.lua" />
+    <None Include="..\..\..\Game\Scripts\AI\TPS\FogOfWarQueries.lua" />
+    <None Include="..\..\..\Game\Scripts\AI\TPS\QueriesTest.lua" />
+    <None Include="..\..\..\Game\Scripts\Entities\EntityPoolDefinitions.xml" />
+    <None Include="..\..\..\Game\Scripts\Entities\Animation\SwitchPlayerModel.lua" />
+    <None Include="..\..\..\Game\Scripts\Entities\actor\BasicActor.lua" />
+    <None Include="..\..\..\Game\Scripts\Entities\actor\player.lua" />
+    <None Include="..\..\..\Game\Scripts\Entities\actor\spectator.lua" />
+    <None Include="..\..\..\Game\Scripts\Entities\AI\AIAlertness.lua" />
+    <None Include="..\..\..\Game\Scripts\Entities\AI\AIAnchor.lua" />
+    <None Include="..\..\..\Game\Scripts\Entities\AI\AISpawner.lua" />
+    <None Include="..\..\..\Game\Scripts\Entities\AI\AITerritory.lua" />
+    <None Include="..\..\..\Game\Scripts\Entities\AI\AIWave.lua" />
+    <None Include="..\..\..\Game\Scripts\Entities\AI\Civilian.lua" />
+    <None Include="..\..\..\Game\Scripts\Entities\AI\Civilian_x.lua" />
+    <None Include="..\..\..\Game\Scripts\Entities\AI\Flyer.lua" />
+    <None Include="..\..\..\Game\Scripts\Entities\AI\Flyer_x.lua" />
+    <None Include="..\..\..\Game\Scripts\Entities\AI\Grunt.lua" />
+    <None Include="..\..\..\Game\Scripts\Entities\AI\Grunt_x.lua" />
+    <None Include="..\..\..\Game\Scripts\Entities\AI\NullAI.lua" />
+    <None Include="..\..\..\Game\Scripts\Entities\AI\NullAI_x.lua" />
+    <None Include="..\..\..\Game\Scripts\Entities\AI\SmartObject.lua" />
+    <None Include="..\..\..\Game\Scripts\Entities\AI\SmartObjectCondition.lua" />
+    <None Include="..\..\..\Game\Scripts\Entities\AI\TagPoint.lua" />
+    <None Include="..\..\..\Game\Scripts\Entities\AI\Misc\Shark.lua" />
+    <None Include="..\..\..\Game\Scripts\Entities\AI\Misc\Shark_x.lua" />
+    <None Include="..\..\..\Game\Scripts\Entities\AI\Shared\BasicAI.lua" />
+    <None Include="..\..\..\Game\Scripts\Entities\AI\Shared\BasicAIEvent.lua" />
+    <None Include="..\..\..\Game\Scripts\Entities\AI\Shared\BasicAITable.lua" />
+    <None Include="..\..\..\Game\Scripts\Entities\AISpawners\SpawnCivilian.lua" />
+    <None Include="..\..\..\Game\Scripts\Entities\AISpawners\SpawnGrunt.lua" />
+    <None Include="..\..\..\Game\Scripts\Entities\Boids\Birds.lua" />
+    <None Include="..\..\..\Game\Scripts\Entities\Boids\Boid.lua" />
+    <None Include="..\..\..\Game\Scripts\Entities\Boids\Bugs.lua" />
+    <None Include="..\..\..\Game\Scripts\Entities\Boids\Chickens.lua" />
+    <None Include="..\..\..\Game\Scripts\Entities\Boids\Crabs.lua" />
+    <None Include="..\..\..\Game\Scripts\Entities\Boids\Fish.lua" />
+    <None Include="..\..\..\Game\Scripts\Entities\Boids\Frogs.lua" />
+    <None Include="..\..\..\Game\Scripts\Entities\Boids\Plover.lua" />
+    <None Include="..\..\..\Game\Scripts\Entities\Boids\Seagull.lua" />
+    <None Include="..\..\..\Game\Scripts\Entities\Boids\Turtles.lua" />
+    <None Include="..\..\..\Game\Scripts\Entities\Default\GeomEntity.lua" />
+    <None Include="..\..\..\Game\Scripts\Entities\Default\RopeEntity.lua" />
+    <None Include="..\..\..\Game\Scripts\Entities\Doors\AdvancedDoor.lua" />
+    <None Include="..\..\..\Game\Scripts\Entities\Doors\AnimDoor.lua" />
+    <None Include="..\..\..\Game\Scripts\Entities\Doors\AutomaticDoor1Piece.lua" />
+    <None Include="..\..\..\Game\Scripts\Entities\Doors\Door.lua" />
+    <None Include="..\..\..\Game\Scripts\Entities\Elevators\Elevator.lua" />
+    <None Include="..\..\..\Game\Scripts\Entities\Elevators\ElevatorSwitch.lua" />
+    <None Include="..\..\..\Game\Scripts\Entities\Elevators\ladder.lua" />
+    <None Include="..\..\..\Game\Scripts\Entities\Environment\Rain.lua" />
+    <None Include="..\..\..\Game\Scripts\Entities\Environment\Shake.lua" />
+    <None Include="..\..\..\Game\Scripts\Entities\Environment\Tornado.lua" />
+    <None Include="..\..\..\Game\Scripts\Entities\Fires\FireParticle.lua" />
+    <None Include="..\..\..\Game\Scripts\Entities\Fires\Propagator.lua" />
+    <None Include="..\..\..\Game\Scripts\Entities\Fires\RandomPropagator.lua" />
+    <None Include="..\..\..\Game\Scripts\Entities\IKObjects\BasicIKObject.lua" />
+    <None Include="..\..\..\Game\Scripts\Entities\IKObjects\IKButton.lua" />
+    <None Include="..\..\..\Game\Scripts\Entities\IKObjects\IKLever.lua" />
+    <None Include="..\..\..\Game\Scripts\Entities\IKObjects\IKTurnWheel.lua" />
+    <None Include="..\..\..\Game\Scripts\Entities\IKObjects\SimpleIKObject.lua" />
+    <None Include="..\..\..\Game\Scripts\Entities\Items\Explosive.lua" />
+    <None Include="..\..\..\Game\Scripts\Entities\Items\Item.lua" />
+    <None Include="..\..\..\Game\Scripts\Entities\Items\ItemSystemMath.lua" />
+    <None Include="..\..\..\Game\Scripts\Entities\Items\XML\OffHand.xml" />
+    <None Include="..\..\..\Game\Scripts\Entities\Items\XML\RepairKit.xml" />
+    <None Include="..\..\..\Game\Scripts\Entities\Items\XML\Accessories\SCARNormalAmmo.xml" />
+    <None Include="..\..\..\Game\Scripts\Entities\Items\XML\Accessories\Silencer.xml" />
+    <None Include="..\..\..\Game\Scripts\Entities\Items\XML\Ammo\bullet.xml" />
+    <None Include="..\..\..\Game\Scripts\Entities\Items\XML\Ammo\C4Explosive.xml" />
+    <None Include="..\..\..\Game\Scripts\Entities\Items\XML\Ammo\ExplosiveGrenade.xml" />
+    <None Include="..\..\..\Game\Scripts\Entities\Items\XML\Ammo\HomingMissile.xml" />
+    <None Include="..\..\..\Game\Scripts\Entities\Items\XML\Ammo\MGbullet.xml" />
+    <None Include="..\..\..\Game\Scripts\Entities\Items\XML\Ammo\Rock.xml" />
+    <None Include="..\..\..\Game\Scripts\Entities\Items\XML\Ammo\Rocket.xml" />
+    <None Include="..\..\..\Game\Scripts\Entities\Items\XML\Ammo\SCARGrenade.xml" />
+    <None Include="..\..\..\Game\Scripts\Entities\Items\XML\Ammo\Vehicles\Tank125.xml" />
+    <None Include="..\..\..\Game\Scripts\Entities\Items\XML\Weapons\DebugGun.xml" />
+    <None Include="..\..\..\Game\Scripts\Entities\Items\XML\Weapons\Fists.xml" />
+    <None Include="..\..\..\Game\Scripts\Entities\Items\XML\Weapons\RefWeapon.xml" />
+    <None Include="..\..\..\Game\Scripts\Entities\Items\XML\Weapons\SCAR.xml" />
+    <None Include="..\..\..\Game\Scripts\Entities\Items\XML\Weapons\SCARAI.xml" />
+    <None Include="..\..\..\Game\Scripts\Entities\Items\XML\Weapons\SCARTutorial.xml" />
+    <None Include="..\..\..\Game\Scripts\Entities\Items\XML\Weapons\AmmoPickups\CustomAmmoPickup.xml" />
+    <None Include="..\..\..\Game\Scripts\Entities\Items\XML\Weapons\AmmoPickups\CustomAmmoPickupLarge.xml" />
+    <None Include="..\..\..\Game\Scripts\Entities\Items\XML\Weapons\AmmoPickups\CustomAmmoPickupMedium.xml" />
+    <None Include="..\..\..\Game\Scripts\Entities\Items\XML\Weapons\AmmoPickups\CustomAmmoPickupSmall.xml" />
+    <None Include="..\..\..\Game\Scripts\Entities\Items\XML\Weapons\Vehicles\AsianCoaxialGun.xml" />
+    <None Include="..\..\..\Game\Scripts\Entities\Items\XML\Weapons\Vehicles\TankCannon.xml" />
+    <None Include="..\..\..\Game\Scripts\Entities\Items\XML\Weapons\Vehicles\VehicleShiTenV2.xml" />
+    <None Include="..\..\..\Game\Scripts\Entities\Ladders\Ladder.lua" />
+    <None Include="..\..\..\Game\Scripts\Entities\Lights\DestroyableLight.lua" />
+    <None Include="..\..\..\Game\Scripts\Entities\Lights\EnvironmentLight.lua" />
+    <None Include="..\..\..\Game\Scripts\Entities\Lights\IndirectLight.lua" />
+    <None Include="..\..\..\Game\Scripts\Entities\Lights\Light.lua" />
+    <None Include="..\..\..\Game\Scripts\Entities\Lights\LightShape.lua" />
+    <None Include="..\..\..\Game\Scripts\Entities\Lights\RigidBodyLight.lua" />
+    <None Include="..\..\..\Game\Scripts\Entities\Lights\SimpleIndirectLight.lua" />
+    <None Include="..\..\..\Game\Scripts\Entities\Lights\SimpleLight.lua" />
+    <None Include="..\..\..\Game\Scripts\Entities\Multiplayer\Flag.lua" />
+    <None Include="..\..\..\Game\Scripts\Entities\Multiplayer\ForbiddenArea.lua" />
+    <None Include="..\..\..\Game\Scripts\Entities\Multiplayer\Objective.lua" />
+    <None Include="..\..\..\Game\Scripts\Entities\Multiplayer\Perimeter.lua" />
+    <None Include="..\..\..\Game\Scripts\Entities\Multiplayer\SpawnGroup.lua" />
+    <None Include="..\..\..\Game\Scripts\Entities\Multiplayer\SpawnPoint.lua" />
+    <None Include="..\..\..\Game\Scripts\Entities\Multiplayer\SpectatorPoint.lua" />
+    <None Include="..\..\..\Game\Scripts\Entities\Multiplayer\TeamRandomSoundVolume.lua" />
+    <None Include="..\..\..\Game\Scripts\Entities\Multiplayer\TeamSoundSpot.lua" />
+    <None Include="..\..\..\Game\Scripts\Entities\Others\CameraShake.lua" />
+    <None Include="..\..\..\Game\Scripts\Entities\Others\CameraSource.lua" />
+    <None Include="..\..\..\Game\Scripts\Entities\Others\CameraTarget.lua" />
+    <None Include="..\..\..\Game\Scripts\Entities\Others\CharacterAttachHelper.lua" />
+    <None Include="..\..\..\Game\Scripts\Entities\Others\CloneFactory.lua" />
+    <None Include="..\..\..\Game\Scripts\Entities\Others\Comment.lua" />
+    <None Include="..\..\..\Game\Scripts\Entities\Others\DecalPlacer.lua" />
+    <None Include="..\..\..\Game\Scripts\Entities\Others\Fan.lua" />
+    <None Include="..\..\..\Game\Scripts\Entities\Others\Hazard.lua" />
+    <None Include="..\..\..\Game\Scripts\Entities\Others\InteractiveEntity.lua" />
+    <None Include="..\..\..\Game\Scripts\Entities\Others\Mine.lua" />
+    <None Include="..\..\..\Game\Scripts\Entities\Others\MissionObjective.lua" />
+    <None Include="..\..\..\Game\Scripts\Entities\Others\PlayerModelChanger.lua" />
+    <None Include="..\..\..\Game\Scripts\Entities\Others\PrecacheCamera.lua" />
+    <None Include="..\..\..\Game\Scripts\Entities\Others\RaisingWater.lua" />
+    <None Include="..\..\..\Game\Scripts\Entities\Others\RigidBody.lua" />
+    <None Include="..\..\..\Game\Scripts\Entities\Others\ShootingTarget.lua" />
+    <None Include="..\..\..\Game\Scripts\Entities\Others\SoundSupressor.lua" />
+    <None Include="..\..\..\Game\Scripts\Entities\Others\Switch.lua" />
+    <None Include="..\..\..\Game\Scripts\Entities\Others\UIEntity.lua" />
+    <None Include="..\..\..\Game\Scripts\Entities\Others\VisRegPoint.lua" />
+    <None Include="..\..\..\Game\Scripts\Entities\Others\WaterKillEvent.lua" />
+    <None Include="..\..\..\Game\Scripts\Entities\Others\Wind.lua" />
+    <None Include="..\..\..\Game\Scripts\Entities\Particle\ParticleEffect.lua" />
+    <None Include="..\..\..\Game\Scripts\Entities\Physics\AnimObject.lua" />
+    <None Include="..\..\..\Game\Scripts\Entities\Physics\AreaBezierVolume.lua" />
+    <None Include="..\..\..\Game\Scripts\Entities\Physics\BasicEntity.lua" />
+    <None Include="..\..\..\Game\Scripts\Entities\Physics\BreakableObject.lua" />
+    <None Include="..\..\..\Game\Scripts\Entities\Physics\Breakage.lua" />
+    <None Include="..\..\..\Game\Scripts\Entities\Physics\Cloth.lua" />
+    <None Include="..\..\..\Game\Scripts\Entities\Physics\Constraint.lua" />
+    <None Include="..\..\..\Game\Scripts\Entities\Physics\DeadBody.lua" />
+    <None Include="..\..\..\Game\Scripts\Entities\Physics\DestroyableObject.lua" />
+    <None Include="..\..\..\Game\Scripts\Entities\Physics\Explosion.lua" />
+    <None Include="..\..\..\Game\Scripts\Entities\Physics\GravityBox.lua" />
+    <None Include="..\..\..\Game\Scripts\Entities\Physics\GravitySphere.lua" />
+    <None Include="..\..\..\Game\Scripts\Entities\Physics\GravityStream.lua" />
+    <None Include="..\..\..\Game\Scripts\Entities\Physics\GravityStreamCap.lua" />
+    <None Include="..\..\..\Game\Scripts\Entities\Physics\GravityValve.lua" />
+    <None Include="..\..\..\Game\Scripts\Entities\Physics\PressurizedObject.lua" />
+    <None Include="..\..\..\Game\Scripts\Entities\Physics\RigidBodyEx.lua" />
+    <None Include="..\..\..\Game\Scripts\Entities\Physics\rope.lua" />
+    <None Include="..\..\..\Game\Scripts\Entities\Physics\WindArea.lua" />
+    <None Include="..\..\..\Game\Scripts\Entities\Render\Cloud.lua" />
+    <None Include="..\..\..\Game\Scripts\Entities\Render\Flash.lua" />
+    <None Include="..\..\..\Game\Scripts\Entities\Render\Fog.lua" />
+    <None Include="..\..\..\Game\Scripts\Entities\Render\FogVolume.lua" />
+    <None Include="..\..\..\Game\Scripts\Entities\Render\Lightning.lua" />
+    <None Include="..\..\..\Game\Scripts\Entities\Render\PrismObject.lua" />
+    <None Include="..\..\..\Game\Scripts\Entities\Render\ViewDist.lua" />
+    <None Include="..\..\..\Game\Scripts\Entities\Render\VolumeObject.lua" />
+    <None Include="..\..\..\Game\Scripts\Entities\Samples\AnimatedCharacterSample.lua" />
+    <None Include="..\..\..\Game\Scripts\Entities\Sound\AmbientVolume.lua" />
+    <None Include="..\..\..\Game\Scripts\Entities\Sound\Dialog.lua" />
+    <None Include="..\..\..\Game\Scripts\Entities\Sound\MissionHint.lua" />
+    <None Include="..\..\..\Game\Scripts\Entities\Sound\MusicEndTheme.lua" />
+    <None Include="..\..\..\Game\Scripts\Entities\Sound\MusicLogicTrigger.lua" />
+    <None Include="..\..\..\Game\Scripts\Entities\Sound\MusicMoodSelector.lua" />
+    <None Include="..\..\..\Game\Scripts\Entities\Sound\MusicPlayPattern.lua" />
+    <None Include="..\..\..\Game\Scripts\Entities\Sound\MusicStinger.lua" />
+    <None Include="..\..\..\Game\Scripts\Entities\Sound\MusicThemeSelector.lua" />
+    <None Include="..\..\..\Game\Scripts\Entities\Sound\RandomAmbientSound.lua" />
+    <None Include="..\..\..\Game\Scripts\Entities\Sound\RandomAmbientSoundPreset.lua" />
+    <None Include="..\..\..\Game\Scripts\Entities\Sound\RandomSoundVolume.lua" />
+    <None Include="..\..\..\Game\Scripts\Entities\Sound\ReverbVolume.lua" />
+    <None Include="..\..\..\Game\Scripts\Entities\Sound\SoundEventSpot.lua" />
+    <None Include="..\..\..\Game\Scripts\Entities\Sound\SoundExclusive.lua" />
+    <None Include="..\..\..\Game\Scripts\Entities\Sound\SoundExclusivePreset.lua" />
+    <None Include="..\..\..\Game\Scripts\Entities\Sound\SoundMoodVolume.lua" />
+    <None Include="..\..\..\Game\Scripts\Entities\Sound\SoundSpot.lua" />
+    <None Include="..\..\..\Game\Scripts\Entities\Triggers\AICheckInBox.lua" />
+    <None Include="..\..\..\Game\Scripts\Entities\Triggers\AreaTrigger.lua" />
+    <None Include="..\..\..\Game\Scripts\Entities\Triggers\CinematicTrigger.lua" />
+    <None Include="..\..\..\Game\Scripts\Entities\Triggers\ProximityTrigger.lua" />
+    <None Include="..\..\..\Game\Scripts\Entities\Vehicles\def_vehicle.xml" />
+    <None Include="..\..\..\Game\Scripts\Entities\Vehicles\veed_defaults.xml" />
+    <None Include="..\..\..\Game\Scripts\Entities\Vehicles\VehicleBase.lua" />
+    <None Include="..\..\..\Game\Scripts\Entities\Vehicles\VehicleBaseAI.lua" />
+    <None Include="..\..\..\Game\Scripts\Entities\Vehicles\VehiclePartDetached.lua" />
+    <None Include="..\..\..\Game\Scripts\Entities\Vehicles\VehiclePool.lua" />
+    <None Include="..\..\..\Game\Scripts\Entities\Vehicles\VehicleSeat.lua" />
+    <None Include="..\..\..\Game\Scripts\Entities\Vehicles\VehicleSystem.lua" />
+    <None Include="..\..\..\Game\Scripts\Entities\Vehicles\DamagesTemplates\def_vehicledamages.xml" />
+    <None Include="..\..\..\Game\Scripts\Entities\Vehicles\DamagesTemplates\DefaultVehicleDamages.xml" />
+    <None Include="..\..\..\Game\Scripts\Entities\Vehicles\Implementations\Abrams.lua" />
+    <None Include="..\..\..\Game\Scripts\Entities\Vehicles\Implementations\HMMWV.lua" />
+    <None Include="..\..\..\Game\Scripts\Entities\Vehicles\Implementations\MH60_Blackhawk.lua" />
+    <None Include="..\..\..\Game\Scripts\Entities\Vehicles\Implementations\SpeedBoat.lua" />
+    <None Include="..\..\..\Game\Scripts\Entities\Vehicles\Implementations\Xml\Abrams.xml" />
+    <None Include="..\..\..\Game\Scripts\Entities\Vehicles\Implementations\Xml\EmptyVehicle.xml" />
+    <None Include="..\..\..\Game\Scripts\Entities\Vehicles\Implementations\Xml\HMMWV.xml" />
+    <None Include="..\..\..\Game\Scripts\Entities\Vehicles\Implementations\Xml\MH60_Blackhawk.xml" />
+    <None Include="..\..\..\Game\Scripts\Entities\Vehicles\Implementations\Xml\SpeedBoat.xml" />
+    <None Include="..\..\..\Game\Scripts\Entities\Vehicles\Lights\def_lights.xml" />
+    <None Include="..\..\..\Game\Scripts\Entities\Vehicles\Lights\DefaultVehicleLights.xml" />
+    <None Include="..\..\..\Game\Scripts\Entities\ZeroG\GravitySphere.lua" />
+    <None Include="..\..\..\Game\Scripts\Entities\_Archive\AICrate.lua" />
+    <None Include="..\..\..\Game\Scripts\Entities\_Archive\AITrigger.lua" />
+    <None Include="..\..\..\Game\Scripts\Entities\_Archive\AnimObject.lua" />
+    <None Include="..\..\..\Game\Scripts\Entities\_Archive\AreaMine.lua" />
+    <None Include="..\..\..\Game\Scripts\Entities\_Archive\AutomaticElevator.lua" />
+    <None Include="..\..\..\Game\Scripts\Entities\_Archive\BFly.lua" />
+    <None Include="..\..\..\Game\Scripts\Entities\_Archive\BoatTrampolineTrigger.lua" />
+    <None Include="..\..\..\Game\Scripts\Entities\_Archive\CameraFocus.lua" />
+    <None Include="..\..\..\Game\Scripts\Entities\_Archive\CameraTargetPoint.lua" />
+    <None Include="..\..\..\Game\Scripts\Entities\_Archive\chain.lua" />
+    <None Include="..\..\..\Game\Scripts\Entities\_Archive\cloth.lua" />
+    <None Include="..\..\..\Game\Scripts\Entities\_Archive\DamageArea.lua" />
+    <None Include="..\..\..\Game\Scripts\Entities\_Archive\fan.lua" />
+    <None Include="..\..\..\Game\Scripts\Entities\_Archive\fan2.lua" />
+    <None Include="..\..\..\Game\Scripts\Entities\_Archive\FlagEntity.lua" />
+    <None Include="..\..\..\Game\Scripts\Entities\_Archive\FrogMine.lua" />
+    <None Include="..\..\..\Game\Scripts\Entities\_Archive\GameEvent.lua" />
+    <None Include="..\..\..\Game\Scripts\Entities\_Archive\Grasshopper.lua" />
+    <None Include="..\..\..\Game\Scripts\Entities\_Archive\HeliStatic.lua" />
+    <None Include="..\..\..\Game\Scripts\Entities\_Archive\ImpulseTrigger.lua" />
+    <None Include="..\..\..\Game\Scripts\Entities\_Archive\ParticleSpray.lua" />
+    <None Include="..\..\..\Game\Scripts\Entities\_Archive\PlaceableExplo.lua" />
+    <None Include="..\..\..\Game\Scripts\Entities\_Archive\PlaceableGeneric.lua" />
+    <None Include="..\..\..\Game\Scripts\Entities\_Archive\ProximityDamage.lua" />
+    <None Include="..\..\..\Game\Scripts\Entities\_Archive\ProximityKeyTrigger.lua" />
+    <None Include="..\..\..\Game\Scripts\Entities\_Archive\ProximityMine.lua" />
+    <None Include="..\..\..\Game\Scripts\Entities\_Archive\pusher.lua" />
+    <None Include="..\..\..\Game\Scripts\Entities\_Archive\ShootTarget.lua" />
+    <None Include="..\..\..\Game\Scripts\Entities\_Archive\SmartProximityTrigger.lua" />
+    <None Include="..\..\..\Game\Scripts\Entities\_Archive\Storm.lua" />
+    <None Include="..\..\..\Game\Scripts\Entities\_Archive\SwingingObject.lua" />
+    <None Include="..\..\..\Game\Scripts\Entities\_Archive\SwivilChair.lua" />
+    <None Include="..\..\..\Game\Scripts\Entities\_Archive\TV.lua" />
+    <None Include="..\..\..\Game\Scripts\Entities\_Archive\VisibilityTrigger.lua" />
+    <None Include="..\..\..\Game\Scripts\Entities\_Archive\Watch.lua" />
+    <None Include="..\..\..\Game\Scripts\Entities\_Archive\Waypoint.lua" />
+    <None Include="..\..\..\Game\Scripts\Expressions\CombatRandomExpressions.lua" />
+    <None Include="..\..\..\Game\Scripts\Expressions\DeadRandomExpressions.lua" />
+    <None Include="..\..\..\Game\Scripts\Expressions\DefaultRandomExpressions.lua" />
+    <None Include="..\..\..\Game\Scripts\Expressions\NoRandomExpressions.lua" />
+    <None Include="..\..\..\Game\Scripts\Expressions\SearchRandomExpressions.lua" />
+    <None Include="..\..\..\Game\Scripts\FlowNodes\CameraShake.lua" />
+    <None Include="..\..\..\Game\Scripts\FlowNodes\ScriptCommand.lua" />
+    <None Include="..\..\..\Game\Scripts\FlowNodes\SpawnParticleEffect.lua" />
+    <None Include="..\..\..\Game\Scripts\FlowNodes\TestScripted.lua" />
+    <None Include="..\..\..\Game\Scripts\GameRules\BattleDust.xml" />
+    <None Include="..\..\..\Game\Scripts\GameRules\DeathMatch.lua" />
+    <None Include="..\..\..\Game\Scripts\GameRules\LevelNames.xml" />
+    <None Include="..\..\..\Game\Scripts\GameRules\SinglePlayer.lua" />
+    <None Include="..\..\..\Game\Scripts\Network\CompressionPolicy.xml" />
+    <None Include="..\..\..\Game\Scripts\Network\EntityScheduler.xml" />
+    <None Include="..\..\..\Game\Scripts\Network\Protect.xml" />
+    <None Include="..\..\..\Game\Scripts\Network\Scheduler.xml" />
+    <None Include="..\..\..\Game\Scripts\Network\StatsConfig.xml" />
+    <None Include="..\..\..\Game\Scripts\Network\wrld.xml" />
+    <None Include="..\..\..\Game\Scripts\Utils\AIDebugUtils.lua" />
+    <None Include="..\..\..\Game\Scripts\Utils\Containers.lua" />
+    <None Include="..\..\..\Game\Scripts\Utils\EntityUtils.lua" />
+    <None Include="..\..\..\Game\Scripts\Utils\Math.lua" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
